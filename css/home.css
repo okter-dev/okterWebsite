@@ -1,45 +1,77 @@
 .title {
     grid-row: 2;
     grid-column: 2;
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
+}
+
+h1 {
+    font-weight: 700 !important;
+    color: var(--main-color);
 }
 
 .img {
-    grid-row: 2;
+    width: 0 !important;
+
+    grid-row: 1 /span 2;
     grid-column: 3 / span 2;
 
     background-image: url("https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+
+    animation: width 1s forwards;
+    animation-delay: 0.2s;
 }
 
 .black {
-    background-color: var(--black);
+    position: relative;
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 1 /span 2;
+    flex-direction: row;
+    gap: 80px;
+    align-items: end;
 }
+
+.black:before{
+    background-color: var(--black);
+    animation: bottom 0.7s forwards;
+    animation-delay: 0.5s;
+    transform: translateY(100%);
+}
+
 .black * {
+    z-index: 2;
+    width: 50%;
+    height: fit-content;
     color: var(--white);
 }
 
 .text {
-    grid-row: 1;
-    grid-column: 4;
+    display: none;
+    grid-row: 4;
+    grid-column: 1;
     border: 1px solid var(--border-color);
     border-bottom: none;
 }
 
 .logo {
-    background-color: var(--main-color);
+    position: relative;
     grid-row: 3;
     grid-column: 1;
     justify-content: center;
     align-items: center;
 }
+.logo:before{
+    background-color: var(--main-color);
+    animation: bottom 0.7s forwards;
+    animation-delay: 0.7s;
+    transform: translateX(100%);
+}
 .logo img {
+    z-index: 2;
     height: 77px;
     width: auto;
 }
 
-ul{
+/*ul{
     grid-row: 2;
     grid-column: 1;
 
@@ -61,17 +93,19 @@ li {
     border-radius: 200px;
     padding: 10px 20px;
     background-color: white;
-}
+}*/
 
 nav {
     grid-row: 3;
-    grid-column: 2 / span 2;
+    grid-column: 3 / span 2;
 
     display: flex;
     flex-direction: column;
     gap: 0 !important;
 
-    border-right: 1px solid var(--border-color);
+    background-color: var(--white);
+
+    border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
 nav a{
@@ -81,13 +115,134 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+nav a img {
+    visibility: hidden;
+    transition: ease-in-out 0.5s;
+    animation: pop 0.1s forwards;
+}
+nav a h3{
+    visibility: hidden;
+    animation: pop 0.1s forwards;
+}
+
 nav a:hover h3{
     transition: 0.3s;
     color: var(--main-color);
 }
+nav a:hover img{
+    margin-right: 20px;
+}
 nav a:nth-child(2){
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+}
+
+
+
+
+.black:before, .logo:before {
+    content: "";
+    top: 0; left: 0;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 1400px) {
+    .img {
+        grid-row: 1 /span 2;
+    }
+    nav {
+        grid-row: 3;
+        grid-column: 2 / span 2;
+    }
+
+    .title {
+        grid-row: 2 !important;
+        grid-column: 2 !important;
+    }
+}
+
+@media (max-width: 950px) {
+    .title {
+        grid-row: 1 !important;
+        grid-column: 2 !important;
+    }
+    .img {
+        grid-row: 2;
+        grid-column: 1/span 2;
+    }
+    .text {
+        display: flex;
+    }
+    .black {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .black h2{
+        width: 100%;
+    }
+    .black p{
+        display: none;
+    }
+    nav {
+        grid-row: 3;
+        grid-column: 1/span 2;
+    }
+    .logo {
+        grid-row: 1;
+        grid-column:1;
+    }
+}
+@media (max-width: 700px) {
+    section.grid {
+        display: flex!important;
+        flex-direction: column;
+    }
+    section.grid > * {
+        height: 327px;
+    }
+    .text {
+        justify-content: center;
+    }
+    nav a h3 {
+        font-size: 25px!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes bottom {
+    100% {
+        transform: translate(0%);
+    }
+}
+@keyframes width {
+    100% {
+        width: 100%;
+    }
+}
+@keyframes pop {
+    100% {
+        visibility: unset;
+    }
+}
+
+@keyframes borrom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
