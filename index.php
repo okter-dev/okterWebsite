@@ -29,16 +29,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
     </article>
 
-   <!-- <ul class="block tag">
-        <li>Developper</li>
-        <li>Design</li>
-        <li>Experience utilisateur</li>
-        <li>Unique</li>
-        <li>🇫🇷</li>
-        <li>Pour vous</li>
-        <li>Okter</li>
-    </ul>-->
-
     <nav class="block nav">
         <a>
             <h3 class="big-text" style="animation-delay: 1.2s">Qui somme nous&nbsp;?</h3>
