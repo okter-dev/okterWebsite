@@ -30,7 +30,7 @@
     </article>
 
     <nav class="block nav">
-        <a>
+        <a href="equipe.php">
             <h3 class="big-text" style="animation-delay: 1.2s">Qui somme nous&nbsp;?</h3>
             <img src="icons/bigarrow.svg" alt="Fleche pour continuer" style="animation-delay: 1.95s">
         </a>

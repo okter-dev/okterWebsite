@@ -5,7 +5,7 @@
 
 :root {
     --white: #E8E9EB;
-    --black: #1D1D1B;
+    --black: rgb(29, 29, 27);
     --border-color: rgba(29, 29, 27, 0.3);
     --main-color: #E84C1D;
 
@@ -15,6 +15,7 @@
 body {
     background-color: var(--white);
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -56,7 +57,7 @@ h1, h2, h3, p, span, li {
     color: var(--black);
 }
 
-p, li{
+p, li, nav a{
     font-family: "halyard-display-variable", sans-serif;
     font-variation-settings: "wght" 300;
     font-size: 16px;
