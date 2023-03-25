@@ -8,15 +8,25 @@
     --black: rgb(29, 29, 27);
     --border-color: rgba(29, 29, 27, 0.3);
     --main-color: #E84C1D;
+    --secondary-color: #009C6D;
 
     --content-min-size: 350px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    overflow-x: hidden;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: 700 !important;
 }
 
 .grid {
@@ -41,6 +51,33 @@ body {
     overflow: hidden;
 }
 
+.big_content {
+    display: flex;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.liens:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10%;
+
+    transition: 0.3s ;
+    background-color: var(--main-color);
+    bottom: 0;
+}
+
+a.liens:active {
+    color: var(--main-color);
+}
+a.liens:hover:before {
+    width: 100%;
+}
+
 /*img*/
 
 .img {
@@ -53,11 +90,11 @@ body {
 }
 
 /*text*/
-h1, h2, h3, p, span, li {
+h1, h2, h3, p, span, li, a {
     color: var(--black);
 }
 
-p, li, nav a{
+p, li, a, span, textarea{
     font-family: "halyard-display-variable", sans-serif;
     font-variation-settings: "wght" 300;
     font-size: 16px;
@@ -72,8 +109,7 @@ p, li, nav a{
     font-size: 32px;
     line-height: 120%;
 }
-
-section.grid{
+section.grid, .content_demi_grid{
     background-color: var(--white);
     width: 100%;
     height: 100vh;
@@ -81,17 +117,46 @@ section.grid{
     min-height: 900px;
 }
 
+.block.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block.button a *, .block.button a{
+    transition: 0.6s;
+}
+.block.button a {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.block.button a img {
+    height: 20px;
+}
+.block.button a:hover{
+    background-color: white;
+}
+.block.button a:hover img {
+    padding-right: 10px;
+}
+
+/*class utilitaire*/
+.color {
+    color: var(--main-color);
+}
+
 
 
 @media (max-width: 1400px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
+    .grid, .demi_grid {
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 @media (max-width: 950px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 327px);
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 347px);
     }
     section.grid{
         height: auto;

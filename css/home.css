@@ -1,15 +1,18 @@
-.title {
-    grid-row: 2;
-    grid-column: 2;
+ésection .title {
+    grid-row: 2 !important;
+    grid-column: 2 !important;
     border: 1px solid var(--border-color);
 }
 
-h1 {
-    font-weight: 700 !important;
+section h1 {
     color: var(--main-color);
 }
 
-.img {
+header {
+    display: none !important;
+}
+
+section .img {
     width: 0;
     grid-row: 1 /span 2;
     grid-column: 3 / span 2;
@@ -19,7 +22,7 @@ h1 {
     animation-delay: 0.2s;
 }
 
-.black {
+section .black {
     position: relative;
     grid-row: 1;
     grid-column: 1 /span 2;
@@ -28,21 +31,21 @@ h1 {
     align-items: end;
 }
 
-.black:before{
+section .black:before{
     background-color: var(--black);
     animation: bottom 0.7s forwards;
     animation-delay: 0.5s;
     transform: translateY(150%) skewY(-10deg);
 }
 
-.black * {
+section .black * {
     z-index: 2;
     width: 50%;
     height: fit-content;
     color: var(--white);
 }
 
-.text {
+section .text {
     display: none;
     grid-row: 4;
     grid-column: 1;
@@ -50,26 +53,26 @@ h1 {
     border-bottom: none;
 }
 
-.logo {
+section .logo {
     position: relative;
     grid-row: 3;
     grid-column: 1;
     justify-content: center;
     align-items: center;
 }
-.logo:before{
+section .logo:before{
     background-color: var(--main-color);
     animation: bottom 0.7s forwards;
     animation-delay: 0.7s;
     transform: translateX(150%) skew(-20deg);
 }
-.logo img {
+section .logo img {
     z-index: 2;
     height: 77px;
     width: auto;
 }
 
-nav {
+section nav {
     grid-row: 3;
     grid-column: 3 / span 2;
 
@@ -82,7 +85,7 @@ nav {
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
-nav a{
+section nav a{
     overflow: hidden;
     cursor: pointer;
 
@@ -91,24 +94,24 @@ nav a{
     align-items: center;
     justify-content: space-between;
 }
-nav a img {
+section nav a img {
     visibility: hidden;
     transition: ease-in-out 0.5s;
     animation: pop 0.1s forwards;
 }
-nav a h3{
+section nav a h3{
     transform: translateY(200%);
     animation: bottom 0.1s forwards;
 }
 
-nav a:hover h3{
+section nav a:hover h3{
     transition: 0.3s;
     color: var(--main-color);
 }
-nav a:hover img{
+section nav a:hover img{
     margin-right: 20px;
 }
-nav a:nth-child(2){
+section nav a:nth-child(2){
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -116,7 +119,7 @@ nav a:nth-child(2){
 
 
 
-.black:before, .logo:before {
+section .black:before, .logo:before {
     content: "";
     top: 0; left: 0;
     z-index: 0;
@@ -127,67 +130,80 @@ nav a:nth-child(2){
 
 
 @media (max-width: 1400px) {
-    .img {
+    section .img {
         grid-row: 1 /span 2;
     }
-    nav {
+    section nav {
         grid-row: 3;
         grid-column: 2 / span 2;
     }
 
-    .title {
+    section .title {
         grid-row: 2 !important;
         grid-column: 2 !important;
     }
 }
 
 @media (max-width: 950px) {
-    .title {
+    section .title {
         grid-row: 1 !important;
         grid-column: 2 !important;
     }
-    .img {
+    section .img {
         grid-row: 2;
         grid-column: 1/span 2;
     }
-    .text {
+    section .text {
         display: flex;
     }
-    .black {
+    section .black {
         grid-column: 2;
         grid-row: 4;
     }
-    .black h2{
+    section .black h2{
         width: 100%;
     }
-    .black p{
+    section .black p{
         display: none;
     }
-    nav {
+    section nav {
         grid-row: 3;
         grid-column: 1/span 2;
     }
-    .logo {
+    section .logo {
         grid-row: 1;
         grid-column:1;
     }
 }
 @media (max-width: 700px) {
-    nav{
+    header {
+        display: flex !important;
+    }
+    section nav{
         border-top: 1px solid var(--border-color);
     }
     section.grid {
         display: flex!important;
         flex-direction: column;
     }
-    section.grid > * {
-        height: 327px;
+
+    section article.frst{
+        margin-top: 70px;
+        border: none;
     }
-    .text {
+
+    section.grid > * {
+        height: 347px;
+    }
+    section .text {
         justify-content: center;
     }
-    nav a h3 {
+    section nav a h3 {
         font-size: 25px!important;
+    }
+    section .img {
+        width: 0;
+        animation: width_mobile 1s forwards;
     }
 }
 
@@ -209,6 +225,11 @@ nav a:nth-child(2){
     100% {
         width: 100%;
         height: 100%;
+    }
+}
+@keyframes width_mobile {
+    100% {
+        width: 100%;
     }
 }
 @keyframes pop {

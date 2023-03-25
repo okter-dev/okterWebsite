@@ -1,0 +1,86 @@
+section {
+    position: relative;
+    height: fit-content;
+}
+
+.content_demi_grid {
+    z-index: 5;
+    position: relative;
+}
+
+.content_demi_grid > .demi_grid {
+    position: absolute;
+    bottom: 0;
+    height: 67%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.info .demi_grid article:first-child h1 {
+    font-weight: 700;
+}
+
+.info .demi_grid article:first-child, .vide {
+    border: solid 1px var(--border-color);
+    border-left: none;
+}
+
+.info .img {
+    background-image: url("../img/equipe/img_1.png");
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.info article.text {
+    background-color: var(--black);
+    justify-content: center;
+    padding: 40px 80px !important;
+    grid-column: 2/span 2;
+    grid-row: 2;
+}
+.info article.text p {
+    color: var(--white);
+}
+
+.arrow {
+    z-index: 7;
+    position: absolute;
+    height: 33.3%;
+    width: 25%;
+    bottom: 0;
+
+    padding: 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow p {
+    font-size: 24px;
+}
+.arrow.next {
+    right: 0;
+}
+
+.arrow.precedent {
+    left: 0;
+}
+
+@media (max-width: 1400px){
+    .arrow {
+        width: 33.3%;
+    }
+    .arrow.precedent {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+    .demi_grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}

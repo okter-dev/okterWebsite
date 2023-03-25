@@ -1,0 +1,30 @@
+footer {
+    margin-top: -1px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top:  1px solid var(--border-color);
+}
+
+footer a:last-child {
+    margin-right: 34px;
+    box-sizing: border-box;
+}
+
+footer span {
+    font-family: "rival-sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media (max-width: 487px) {
+    footer a:last-child {
+        margin-right: 0px;
+    }
+}
