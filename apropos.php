@@ -9,46 +9,52 @@
 
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/source/header.css">
+    <link rel="stylesheet" href="css/source/footer.css">
     <link rel="stylesheet" href="css/equipes.css">
 
 
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
 </head>
-<body>
+<body id="body">
 <?php
+$titre = 'Découvrez l’univers Okter';
 include 'source/header.php';
 ?>
 
-<section>
-    <div class="content_demi_grid info">
-        <div class="demi_grid">
-            <article class="block title">
-                <h1 class="big-text">Une équipe passioné pour des projets passionant</h1>
-                <p>Petit texte qsdhjdhqs dqsfsq</p>
-            </article>
+<section class="grid">
+    <article class="title block">
+        <h1 class="big-text bold">L'aventure Okter, au service de votre succès</h1>
+        <p>Agence web locale au Puy-En-Velay - Solutions personnalisées pour propulser votre présence en ligne</p>
+    </article>
 
-            <div class="img"></div>
+    <div class="img"></div>
 
-            <div class="vide block"></div>
+    <article class="block text">
+        <p>Okter est née d'une vision audacieuse : devenir un acteur incontournable du développement web, en combinant expertise technique et créativité débridée. Guidée par cette ambition, nous nous engageons à concrétiser vos projets numériques en créant des expériences utilisateur mémorables et en vous accompagnant vers de nouveaux horizons.</p>
+    </article>
 
-            <article class="block text">
-                <p>Notre équipe est composée d'individus passionnés, dévoués à offrir des résultats exceptionnels à nos clients. Nous nous engageons à fournir des solutions innovantes et efficaces qui répondent aux besoins uniques de chaque projet. Avec une attention portée à la qualité et aux détails, nous nous efforçons de dépasser les attentes et de fournir des résultats exceptionnels.<br><br>Notre équipe est motivée par une passion pour le développement web et un engagement envers l'excellence, en veillant à ce que chaque projet que nous entreprenons soit un succès.</p>
-            </article>
-        </div>
-    </div>
+    <?php
+        $text = "L’innovation, la passion et la collaboration forment le trio harmonieux qui guide notre quête d'excellence. Ensemble, elles nous inspire à créer des solutions audacieuses, à dépasser les attentes et à tisser des liens durables avec nos clients. C'est ainsi que nous écrivons nos plus belles réussites.";
+    ?>
 
-    <!--fleches-->
-    <div class="arrow next">
-        <p>Suivant</p>
-        <img src="icons/bigarrow.svg" alt="Fleche pour continuer">
-    </div>
-    <div class="arrow precedent">
-        <img src="icons/bigarrow.svg" style="transform: rotate(180deg)" alt="Fleche pour continuer">
-        <p>Précédent</p>
-    </div>
+    <article class="title block longue">
+        <h2 class="big-text">Trois valeurs guident notre quête d'excellence</h2>
+        <p><?php echo $text ?></p>
+    </article>
+
+    <article class="block text long_text">
+        <p><?php echo $text ?></p>
+    </article>
+
 </section>
 
+<button class="bigbutton" onclick="window.location.href = 'solutions.php'">
+    <p>Découvrer nos solutions, pour résoudres vos problématiques</p>
+</button>
 
+<?php
+include 'source/footer.php';
+?>
 
 <script src="js/header.js"></script>
 </body>

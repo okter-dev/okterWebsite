@@ -42,7 +42,7 @@ include 'source/header.php';
 
     <nav class="block nav">
         <?php
-        $data = ["Un site Web&nbsp;?", "solutions.php"=>"Nos solutions&nbsp;?", "contact.php"=>"Nous contacter&nbsp;!"];
+        $data = ["apropos.php"=>"Qui sommes-nous&nbsp;?", "solutions.php"=>"Nos solutions&nbsp;?", "contact.php"=>"Nous contacter&nbsp;!"];
 
         $count = 0;
         foreach ($data as $key => $data){

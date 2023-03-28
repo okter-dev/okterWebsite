@@ -32,7 +32,7 @@ $titre = 'Notre expertise dédié à vos besoins !';
 require 'source/header.php';
 ?>
 
-<section class="grid top anim">
+<section class="grid top">
     <?php
     $nbr = 0;
     foreach ($table as $block){
@@ -63,17 +63,18 @@ require 'source/header.php';
     }
 
     ?>
+
+    <div class="img"></div>
     
 </section>
 
-<button onclick="window.location.href = 'contact.php'">
-    Créons ensemble une démarche adaptée à votre projet
+<button class="bigbutton" onclick="window.location.href = 'contact.php'">
+    <p>Créons ensemble une démarche adaptée à votre projet</p>
 </button>
 
 <?php
 include 'source/footer.php';
 ?>
 <script src="js/header.js" ></script>
-<script src="js/animation.js" ></script>
 </body>
 </html>

@@ -105,6 +105,5 @@ require 'source/header.php';
 include 'source/footer.php';
 ?>
 <script src="js/header.js" ></script>
-<script src="js/animation.js" ></script>
 </body>
 </html>
