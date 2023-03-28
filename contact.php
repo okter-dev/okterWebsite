@@ -83,7 +83,7 @@ require 'source/header.php';
         <label for="content">Votre message</label>
         <textarea name="content" id="content" placeholder="Votre message"></textarea>
 
-        <input type="submit" class="button" value="envoyer">
+        <input type="submit" class="button" value="Envoyer">
     </form>
 
     <article class="block title color">

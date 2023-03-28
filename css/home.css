@@ -1,4 +1,4 @@
-ésection .title {
+section .title {
     grid-row: 2 !important;
     grid-column: 2 !important;
     border: 1px solid var(--border-color);
@@ -17,7 +17,7 @@ section .img {
     grid-row: 1 /span 2;
     grid-column: 3 / span 2;
 
-    background-image: url("https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+    background-image: url("../img/photo-1664575599618-8f6bd76fc670 1.png");
     animation: width 1s forwards;
     animation-delay: 0.2s;
 }
@@ -154,10 +154,12 @@ section .black:before, .logo:before {
         grid-column: 1/span 2;
     }
     section .text {
+        border: none;
+        grid-column: 2;
         display: flex;
     }
     section .black {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 4;
     }
     section .black h2{
@@ -206,12 +208,6 @@ section .black:before, .logo:before {
         animation: width_mobile 1s forwards;
     }
 }
-
-
-
-
-
-
 
 
 
