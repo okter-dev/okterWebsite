@@ -78,7 +78,10 @@ header nav a {
 }
 
 @media (max-width: 1200px) {
+    header.on {
 
+        position: fixed;
+    }
     header {
         transform: none;
 

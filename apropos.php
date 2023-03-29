@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>okter</title>
-    <meta name="description" content="Créer un site web de qualité en Haute-Loire ? Notre équipe d'experts en développement web offre des solutions sur mesure pour les particuliers et les entreprises, y compris les PME. Nous sommes spécialisés dans la création de sites web hautement performants et optimisés pour les moteurs de recherche. Contactez-nous dès maintenant pour un site web professionnel et efficace."> <!--description sous la recherche Google-->
+    <meta name="description" content="Découvrez Okter, une agence web passionnée et expérimentée située au Puy-en-Velay. Rencontrez notre équipe et apprenez-en davantage sur notre engagement à fournir des solutions web innovantes et de qualité.">
     <meta name="author" content="Baudry Souvignet">
     <meta name="author" content="okter">
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/source/footer.css">
     <link rel="stylesheet" href="css/equipes.css">
 
-
+    <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
 </head>
 <body id="body">
@@ -24,7 +24,7 @@ include 'source/header.php';
 <section class="grid">
     <article class="title block">
         <h1 class="big-text bold">L'aventure Okter, au service de votre succès</h1>
-        <p>Agence web locale au Puy-En-Velay - Solutions personnalisées pour propulser votre présence en ligne</p>
+        <p>Notre agence web située au Puy-en-Velay propose des solutions personnalisées pour booster votre présence en ligne.</p>
     </article>
 
     <div class="img"></div>
@@ -34,7 +34,7 @@ include 'source/header.php';
     </article>
 
     <?php
-        $text = "L’innovation, la passion et la collaboration forment le trio harmonieux qui guide notre quête d'excellence. Ensemble, elles nous inspire à créer des solutions audacieuses, à dépasser les attentes et à tisser des liens durables avec nos clients. C'est ainsi que nous écrivons nos plus belles réussites.";
+        $text = "L’innovation, la passion et la collaboration forment le trio harmonieux qui guide notre quête d'excellence. Ensemble, elles nous inspirent à créer des solutions audacieuses, à dépasser les attentes et à tisser des liens durables avec nos clients. C'est ainsi que nous écrivons nos plus belles réussites.";
     ?>
 
     <article class="title block longue">
@@ -56,6 +56,6 @@ include 'source/header.php';
 include 'source/footer.php';
 ?>
 
-<script src="js/header.js"></script>
+<script src="js/header.js" async ></script>
 </body>
 </html>

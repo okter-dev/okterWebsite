@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>okter</title>
-    <meta name="description" content="Créer un site web de qualité en Haute-Loire ? Notre équipe d'experts en développement web offre des solutions sur mesure pour les particuliers et les entreprises, y compris les PME. Nous sommes spécialisés dans la création de sites web hautement performants et optimisés pour les moteurs de recherche. Contactez-nous dès maintenant pour un site web professionnel et efficace."> <!--description sous la recherche Google-->
+    <meta name="description" content="Okter - Agence web spécialisée dans la création de sites web et d'expériences web au Puy-en-Velay. Offrez à votre entreprise une présence en ligne exceptionnelle grâce à nos solutions personnalisées.">
     <meta name="author" content="Baudry Souvignet">
     <meta name="author" content="okter">
 
@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/source/footer.css">
     <link rel="stylesheet" href="css/source/header.css">
 
-
-    <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
+    <link rel="icon" href="img/logosimple40.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css"
 </head>
 <body>
 <?php
@@ -23,16 +23,15 @@ include 'source/header.php';
 <section class="grid">
 
     <article class="block title frst">
-        <h1 class="big-text bold">Nous vous offrons bien plus qu’un site</h1>
-        <p>En façonnant des expériences inédites, enchanteresses et mémorables</p>
+        <h1 class="big-text bold">Nous proposons bien plus qu’un site</h1>
+        <p>En façonnant des expériences inédites, enchanteresses et mémorables.</p>
     </article>
 
     <div class="img"></div>
 
-    <?php $text = "Innover est notre essence même, une quête constante qui oriente nos réalisations. Notre ambition, faire briller votre projet en le distinguant par une touche singulière. Implantés axu cœur du Puy-en-Velay, nos créations poursuivent un objectif clair : atteindre et marquer les esprits.";?>
-
+    <?php $text = "Innover est notre essence même, une quête constante qui oriente nos réalisations. Notre ambition est de faire briller votre projet en le distinguant par une touche singulière. Implanté au cœur du Puy-en-Velay, nos créations poursuivent un objectif clair : atteindre et marquer les esprits."?>
     <article class="block black">
-        <h2 class="big-text">Des sites concu pour vous, pensez pour tous</h2>
+        <h2 class="big-text">Des sites conçus pour vous, pensés pour tous.</h2>
         <p><?php echo $text ?></p>
     </article>
 
@@ -67,10 +66,11 @@ include 'source/header.php';
         <img src="img/logo80.png" alt="logo de la société">
     </article>
 </section>
-
 <?php
 include 'source/footer.php';
 ?>
-<script src="js/header.js" ></script>
+<script src="js/header.js"  async ></script>
+
+
 </body>
 </html>

@@ -184,8 +184,56 @@ section.grid, .content_demi_grid{
     transform: translateX(0%) skew(0deg);
 }
 
+/*ML*/
+section.ml {
+    display: flex;
+    align-items: start;
+    margin-top: 33vh;
+}
+
+.ml .title {
+    flex-grow: 2;
+    background-color: var(--main-color);
+    height: 33vh;
+    max-width: 25vw;
+}
+
+.ml .text {
+    flex-grow: 3;
+    height: fit-content;
+    padding-right: 25vw;
+}
+
+@media (max-height: 900px){
+    section.ml {
+        margin-top: 347px;
+    }
+    .ml .title  {
+        height: 347px;
+    }
+}
+
+.ml .title h1 {
+    color: var(--white);
+}
+.ml strong {
+    color: var(--main-color);
+}
 
 @media (max-width: 1400px) {
+    section.ml {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ml .title {
+        width: 100%;
+        max-width: none!important;
+    }
+    .ml .text {
+        padding-right: 40px;
+        max-width: 900px;
+        width: 95%;
+    }
     .grid, .demi_grid {
         grid-template-columns: repeat(3, 1fr) !important;
     }

@@ -3,7 +3,7 @@
 $table = [
     ['titre'=>"Trois facettes pour une présence en ligne rayonnante", 'article' => "Notre approche sur mesure permet de d’aborder chaque projet sous un nouvel angle.", 'color'=>'white'],
     ['titre'=>'Site primaire', 'article' => "Imaginez votre petite société décollant sur la toile, mais votre présence en ligne ne reflète pas l'unicité de votre marque. Nous sommes là pour vous aider à réaliser le site web qu'elle mérite, sans compromis sur la qualité et le design.", 'color'=>'main-color'],
-    ['titre'=>'Site vitrine', 'article' => "Votre entreprise est le fruit d'une création minutieuse et unique. Pour la distinguer dans le monde en ligne et captiver les visiteurs, il est important de lui offrir une site à la hauteur. Donnez lui la chance de briller.", 'color'=>'black'],
+    ['titre'=>'Site vitrine', 'article' => "Votre entreprise est le fruit d'une création minutieuse et unique. Pour la distinguer dans le monde en ligne et captiver les visiteurs, il est important de lui offrir un site à la hauteur. Donnez lui la chance de briller.", 'color'=>'black'],
     ['titre'=>'Site intéractif', 'article' => "Imaginez-vous en train de naviguer sur un site web où chaque clic vous transporte dans un univers interactif et surprenant. Offrez à vos utilisateurs l'expérience ultime qu'ils méritent.", 'color'=>'secondary-color']
 ];
 ?>
@@ -14,7 +14,7 @@ $table = [
 <head>
     <meta charset="UTF-8">
     <title>okter</title>
-    <meta name="description" content="Créer un site web de qualité en Haute-Loire ? Notre équipe d'experts en développement web offre des solutions sur mesure pour les particuliers et les entreprises, y compris les PME. Nous sommes spécialisés dans la création de sites web hautement performants et optimisés pour les moteurs de recherche. Contactez-nous dès maintenant pour un site web professionnel et efficace."> <!--description sous la recherche Google-->
+    <meta name="description" content="Okter propose des solutions web sur mesure pour votre entreprise, allant de la conception de sites web à des expériences web interactives. Découvrez comment nous pouvons vous aider à développer votre présence en ligne.">
     <meta name="author" content="Baudry Souvignet">
     <meta name="author" content="okter">
 
@@ -23,7 +23,7 @@ $table = [
     <link rel="stylesheet" href="css/source/header.css">
     <link rel="stylesheet" href="css/solution.css">
 
-
+    <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
 </head>
 <body>
@@ -75,6 +75,6 @@ require 'source/header.php';
 <?php
 include 'source/footer.php';
 ?>
-<script src="js/header.js" ></script>
+<script src="js/header.js" async ></script>
 </body>
 </html>

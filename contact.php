@@ -30,7 +30,7 @@ if (isset($_POST['title'])){
 <head>
     <meta charset="UTF-8">
     <title>okter</title>
-    <meta name="description" content="Créer un site web de qualité en Haute-Loire ? Notre équipe d'experts en développement web offre des solutions sur mesure pour les particuliers et les entreprises, y compris les PME. Nous sommes spécialisés dans la création de sites web hautement performants et optimisés pour les moteurs de recherche. Contactez-nous dès maintenant pour un site web professionnel et efficace."> <!--description sous la recherche Google-->
+    <meta name="description" content="Contactez Okter, votre agence web au Puy-en-Velay, pour discuter de vos besoins en matière de création de site web et d'expériences web. N'hésitez pas à nous envoyer un message ou à nous appeler pour planifier un rendez-vous.">
     <meta name="author" content="Baudry Souvignet">
     <meta name="author" content="okter">
 
@@ -39,7 +39,7 @@ if (isset($_POST['title'])){
     <link rel="stylesheet" href="css/source/header.css">
     <link rel="stylesheet" href="css/contact.css">
 
-
+    <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
 </head>
 <body>
@@ -52,7 +52,7 @@ require 'source/header.php';
     <article class="block title mail">
         <h2 class="big-text bold">Nous écrire</h2>
         <p>
-            <a href="mailto: okter.contact@gmail.com ">Mail: <span class="color">okter.contact@gmail.com</span></a>
+            <a href="mailto: contact.okter@gmail.com ">Mail: <span class="color">contact.okter@gmail.com</span></a>
             <span onclick="window.location.href='#form'">
                 Formulaire
                 <img src="icons/bigarrow.svg" alt="Fleche pour continuer" style="animation-delay: $temps_bis">
@@ -87,12 +87,10 @@ require 'source/header.php';
     </form>
 
     <article class="block title color">
-        <h3 class="big-text">Nos réseaux sociaux </h3>
+        <a href="https://www.instagram.com/okter.fr/"><h3 style="text-decoration: underline" class="big-text">Instagram </h3></a>
         <p>
-            <a href="">Instagram</a><br>
-            <a href="">Linkedin</a><br>
-            <a href="">Facebook</a><br>
-        </p>
+            Instagram nous permet de partager nos projets, nos inspirations et de créer des liens forts avec des acteurs émergents dans le domaine du web.</p>
+
     </article>
 
     <article class="block title position">
@@ -104,6 +102,6 @@ require 'source/header.php';
 <?php
 include 'source/footer.php';
 ?>
-<script src="js/header.js" ></script>
+<script src="js/header.js"  async ></script>
 </body>
 </html>
