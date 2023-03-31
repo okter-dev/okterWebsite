@@ -1,6 +1,4 @@
 <?php
-/*if (isset($_POST['title'])){$to = "contact.okter@gmail.com"; $subject = $_POST['title']; $societe = $_POST['societe']; $tel = $_POST['phone']; $name = $_POST['nom']; $email = $_POST['mail']; $message = $_POST['content']; $headers = "From: $name <$email>" . "\r\n"; $headers .= "Reply-To: $email" . "\r\n"; $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n"; $body = "<p>Nom: $name</p>"; $body .= "<p>Email: $email</p>"; $body .= "<p>Societe: $societe</p>"; $body .= "<p>telephone: $tel</p>"; $body .= "<p>Message: $message</p>"; if (mail($to, $subject, $body, $headers)){echo 'ok';} } */
-
 
 if(isset($_POST['title'])) {
     ini_set("SMTP","smtp.gmail.com");
@@ -11,15 +9,11 @@ if(isset($_POST['title'])) {
     ini_set("ssl","tls");
 
     $to = "okter.backup@gmail.com";
-    $subject = $_POST['title'];
-    $message = "Contenu de l'e-mail";
-    $headers = "De : votreadresse@gmail.com";
+    $subject = $_POST['title']; $societe = $_POST['societe']; $tel = $_POST['phone']; $name = $_POST['nom']; $email = $_POST['mail']; $message = $_POST['content'];
+    $body = "<p>Nom: $name</p>"; $body .= "<p>Email: $email</p>"; $body .= "<p>Societe: $societe</p>"; $body .= "<p>telephone: $tel</p>"; $body .= "<p>Message: $message</p>";
+    $headers = "De : votreadresse@gmail.com"; $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-    if(mail($to, $subject, $message, $headers)) {
-        echo "E-mail envoyé avec succès à " . $to;
-    } else {
-        echo "Erreur : impossible d'envoyer l'e-mail.";
-    }
+    mail($to, $subject, $body, $headers);
 }
 
 ?>
