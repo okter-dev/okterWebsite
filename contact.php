@@ -1,28 +1,4 @@
-<?php
-if (isset($_POST['title'])){
-    echo 'ok';
 
-    $to = "baudrysouvignet07@gmail.com"; // Adresse email du destinataire
-    $subject = $_POST['title']; // Sujet de l'email
-    $name = $_POST['nom']; // Récupération du nom de l'expéditeur depuis le formulaire
-    $email = $_POST['mail']; // Récupération de l'adresse email de l'expéditeur depuis le formulaire
-    $message = $_POST['content']; // Récupération du message depuis le formulaire
-
-    // Construction de l'en-tête de l'email
-    $headers = "From: $name <$email>" . "\r\n";
-    $headers .= "Reply-To: $email" . "\r\n";
-    $headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-
-    // Construction du corps de l'email
-    $body = "<p>Nom: $name</p>";
-    $body .= "<p>Email: $email</p>";
-    $body .= "<p>Message: $message</p>";
-
-    // Envoi de l'email
-    mail($to, $subject, $body, $headers);
-}
-
-?>
 
 
 <!DOCTYPE html>
@@ -44,9 +20,7 @@ if (isset($_POST['title'])){
 </head>
 <body>
 <?php
-$titre = 'Dites-nous ce dont vous avez besoin !';
-require 'source/header.php';
-?>
+$titre = 'Dites-nous ce dont vous avez besoin !'; require 'source/header.php'; ?>
 
 <section class="grid">
     <article class="block title mail">
@@ -60,7 +34,7 @@ require 'source/header.php';
         </p>
     </article>
 
-    <form id="form" class="block" action="contact.php" method="post">
+    <form id="form" class="block" action="./" method="post">
         <h2 class="big-text">Votre message</h2>
 
         <div>
@@ -100,8 +74,7 @@ require 'source/header.php';
 </section>
 
 <?php
-include 'source/footer.php';
-?>
+include 'source/footer.php'; ?>
 <script src="js/header.js"  async ></script>
 </body>
 </html>

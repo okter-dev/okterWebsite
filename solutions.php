@@ -1,12 +1,5 @@
 <?php
-
-$table = [
-    ['titre'=>"Trois facettes pour une présence en ligne rayonnante", 'article' => "Notre approche sur mesure permet de d’aborder chaque projet sous un nouvel angle.", 'color'=>'white'],
-    ['titre'=>'Site primaire', 'article' => "Imaginez votre petite société décollant sur la toile, mais votre présence en ligne ne reflète pas l'unicité de votre marque. Nous sommes là pour vous aider à réaliser le site web qu'elle mérite, sans compromis sur la qualité et le design.", 'color'=>'main-color'],
-    ['titre'=>'Site vitrine', 'article' => "Votre entreprise est le fruit d'une création minutieuse et unique. Pour la distinguer dans le monde en ligne et captiver les visiteurs, il est important de lui offrir un site à la hauteur. Donnez lui la chance de briller.", 'color'=>'black'],
-    ['titre'=>'Site intéractif', 'article' => "Imaginez-vous en train de naviguer sur un site web où chaque clic vous transporte dans un univers interactif et surprenant. Offrez à vos utilisateurs l'expérience ultime qu'ils méritent.", 'color'=>'secondary-color']
-];
-?>
+$table = [ ['titre'=>"Trois facettes pour une présence en ligne rayonnante", 'article' => "Notre approche sur mesure permet de d’aborder chaque projet sous un nouvel angle.", 'color'=>'white'], ['titre'=>'Site primaire', 'article' => "Imaginez votre petite société décollant sur la toile, mais votre présence en ligne ne reflète pas l'unicité de votre marque. Nous sommes là pour vous aider à réaliser le site web qu'elle mérite, sans compromis sur la qualité et le design.", 'color'=>'main-color'], ['titre'=>'Site vitrine', 'article' => "Votre entreprise est le fruit d'une création minutieuse et unique. Pour la distinguer dans le monde en ligne et captiver les visiteurs, il est important de lui offrir un site à la hauteur. Donnez lui la chance de briller.", 'color'=>'black'], ['titre'=>'Site intéractif', 'article' => "Imaginez-vous en train de naviguer sur un site web où chaque clic vous transporte dans un univers interactif et surprenant. Offrez à vos utilisateurs l'expérience ultime qu'ils méritent.", 'color'=>'secondary-color'] ]; ?>
 
 
 <!DOCTYPE html>
@@ -28,22 +21,11 @@ $table = [
 </head>
 <body>
 <?php
-$titre = 'Notre expertise dédié à vos besoins !';
-require 'source/header.php';
-?>
+$titre = 'Notre expertise dédié à vos besoins !'; require 'source/header.php'; ?>
 
 <section class="grid top">
     <?php
-    $nbr = 0;
-    foreach ($table as $block){
-        $className = 'block_'.$nbr;
-        $animation = $nbr * 0.6;
-        $title = $block['color'] === 'white' ?
-            "<h1 class='big-text bold'>{$block['titre']}</h1>" :
-            "<h3 class='big-text'><span>0$nbr - </span>{$block['titre']}</h3>";
-
-        $nbr++;
-        echo <<<HTML
+    $nbr = 0; foreach ($table as $block){ $className = 'block_'.$nbr; $animation = $nbr * 0.6; $title = $block['color'] === 'white' ? "<h1 class='big-text bold'>{$block['titre']}</h1>" : "<h3 class='big-text'><span>0$nbr - </span>{$block['titre']}</h3>"; $nbr++; echo <<<HTML
             <article class="block title $className" >
                 $title
                 <p>{$block['article']}</p>
@@ -65,7 +47,7 @@ require 'source/header.php';
     ?>
 
     <div class="img"></div>
-    
+
 </section>
 
 <button class="bigbutton" onclick="window.location.href = 'contact.php'">
