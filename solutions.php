@@ -6,6 +6,7 @@ $table = [ ['titre'=>"Trois facettes pour une présence en ligne rayonnante", 'a
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>okter</title>
     <meta name="description" content="Okter propose des solutions web sur mesure pour votre entreprise, allant de la conception de sites web à des expériences web interactives. Découvrez comment nous pouvons vous aider à développer votre présence en ligne.">
     <meta name="author" content="Baudry Souvignet">
@@ -18,6 +19,7 @@ $table = [ ['titre'=>"Trois facettes pour une présence en ligne rayonnante", 'a
 
     <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <?php
@@ -50,7 +52,7 @@ $titre = 'Notre expertise dédié à vos besoins !'; require 'source/header.php'
 
 </section>
 
-<button class="bigbutton" onclick="window.location.href = 'contact.php'">
+<button class="bigbutton" onclick="window.location.href = 'contact'">
     <p>Créons ensemble une démarche adaptée à votre projet</p>
 </button>
 

@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>okter</title>
     <meta name="description" content="Consultez les mentions légales d'Okter, votre agence de création de sites web et d'expériences web au Puy-en-Velay. Informations sur notre entreprise, droits d'auteur et politique de confidentialité.">
     <meta name="author" content="Baudry Souvignet">
@@ -13,6 +14,7 @@
 
     <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
 </head>
 <body id="body" style="display: unset">

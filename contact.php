@@ -5,6 +5,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>okter</title>
     <meta name="description" content="Contactez Okter, votre agence web au Puy-en-Velay, pour discuter de vos besoins en matière de création de site web et d'expériences web. N'hésitez pas à nous envoyer un message ou à nous appeler pour planifier un rendez-vous.">
     <meta name="author" content="Baudry Souvignet">
@@ -17,6 +18,7 @@
 
     <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <?php
@@ -26,10 +28,10 @@ $titre = 'Dites-nous ce dont vous avez besoin !'; require 'source/header.php'; ?
     <article class="block title mail">
         <h2 class="big-text bold">Nous écrire</h2>
         <p>
-            <a href="mailto: contact.okter@gmail.com ">Mail: <span class="color">contact.okter@gmail.com</span></a>
+            <a href="mailto:contact.okter@gmail.com" >Mail: <span class="color">contact.okter@gmail.com</span></a>
             <span onclick="window.location.href='#form'">
                 Formulaire
-                <img src="icons/bigarrow.svg" alt="Fleche pour continuer" style="animation-delay: $temps_bis">
+                <img src="img/bigarrow.svg" alt="Fleche pour continuer" style="animation-delay: $temps_bis">
             </span>
         </p>
     </article>
@@ -49,7 +51,7 @@ $titre = 'Dites-nous ce dont vous avez besoin !'; require 'source/header.php'; ?
             <input type="email" placeholder="Email" name="mail" id="mail" required>
 
             <label for="phone">Votre numero de telepehone</label>
-            <input type="text" placeholder="Téléphone (facultatif)" name="phone" id="phone">
+            <input type="text" placeholder="Téléphone" name="phone" id="phone" required>
         </div>
         <label for="title">Titre</label>
         <input type="text" placeholder="Sujet" name="title" id="title">
@@ -61,7 +63,7 @@ $titre = 'Dites-nous ce dont vous avez besoin !'; require 'source/header.php'; ?
     </form>
 
     <article class="block title color">
-        <a href="https://www.instagram.com/okter.fr/"><h3 style="text-decoration: underline" class="big-text">Instagram </h3></a>
+        <a href="https://www.instagram.com/okter.fr/" target="_blank"><h3 style="text-decoration: underline" class="big-text">Instagram </h3></a>
         <p>
             Instagram nous permet de partager nos projets, nos inspirations et de créer des liens forts avec des acteurs émergents dans le domaine du web.</p>
 

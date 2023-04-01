@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>okter</title>
     <meta name="description" content="Découvrez Okter, une agence web passionnée et expérimentée située au Puy-en-Velay. Rencontrez notre équipe et apprenez-en davantage sur notre engagement à fournir des solutions web innovantes et de qualité.">
     <meta name="author" content="Baudry Souvignet">
@@ -14,6 +15,7 @@
 
     <link rel="icon" href="img/logosimple40.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/xur3ymq.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="body">
 <?php
@@ -48,7 +50,7 @@ include 'source/header.php';
 
 </section>
 
-<button class="bigbutton" onclick="window.location.href = 'solutions.php'">
+<button class="bigbutton" onclick="window.location.href = 'solutions'">
     <p>Découvrer nos solutions, pour résoudres vos problématiques</p>
 </button>
 
